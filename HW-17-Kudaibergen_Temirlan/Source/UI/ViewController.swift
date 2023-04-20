@@ -51,7 +51,9 @@ class ViewController: UIViewController {
         button.backgroundColor = .link
         button.layer.cornerRadius = 15
         button.setTitle("Сменить тему", for: .normal)
-        button.addTarget(self, action: #selector(colorChangeButtonPressed), for: .touchUpInside)
+        button.addTarget(self,
+                         action: #selector(colorChangeButtonPressed),
+                         for: .touchUpInside)
         return button
     }()
     
@@ -60,7 +62,9 @@ class ViewController: UIViewController {
         button.setTitle("Сгенерировать пароль", for: .normal)
         button.backgroundColor = .systemGreen
         button.layer.cornerRadius = 15
-        button.addTarget(self, action: #selector(generatePasswordButtonPressed), for: .touchUpInside)
+        button.addTarget(self,
+                         action: #selector(generatePasswordButtonPressed),
+                         for: .touchUpInside)
         return button
     }()
     
@@ -69,7 +73,9 @@ class ViewController: UIViewController {
         button.setTitle("Остановить", for: .normal)
         button.backgroundColor = .systemRed
         button.layer.cornerRadius = 15
-        button.addTarget(self, action: #selector(stopGeneratePasswordButtonPressed), for: .touchUpInside)
+        button.addTarget(self,
+                         action: #selector(stopGeneratePasswordButtonPressed),
+                         for: .touchUpInside)
         return button
     }()
     
